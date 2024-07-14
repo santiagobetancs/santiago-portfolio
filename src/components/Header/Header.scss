@@ -41,6 +41,9 @@
                 gap: 22.5px;
                 width: auto;
             }
+            @include desktop {
+                gap: 50px;
+            }
         }
 
         &--sb {
@@ -64,6 +67,7 @@
         color: black;
         padding: 0px 0 40px 0;
         font-size: 1rem;
+        cursor: pointer;
 
         &:hover {
             color: $forest;
@@ -89,6 +93,10 @@
 
     &__link {
         color: black;
+
+        &:hover {
+            color: $forest;
+        }
     }
 
     &__sb {
