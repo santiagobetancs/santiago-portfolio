@@ -4,6 +4,7 @@ import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { IoIosMail } from "react-icons/io";
 import { Link } from 'react-router-dom';
+import santiago from '../../assets/images/Santiago.png'
 
 export default function Header() {
     return (
@@ -11,6 +12,9 @@ export default function Header() {
             <header className='header'>
                 <section className='header__box header__box--logo'>
                     <img src={logo} alt="logo" className='header__logo'/>
+                </section>
+                <section className='header__box header__box--sb'>
+                    <img className='header__sb' src={santiago} alt="" />
                 </section>
                 <section className='header__box header__box--nav'>
                     <h4 className='header__button'>
