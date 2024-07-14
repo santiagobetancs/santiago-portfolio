@@ -76,6 +76,10 @@
         @include tablet {
             padding: 0;
         }
+
+        @include desktop {
+            font-size: 1.25rem;
+        }
     }
 
     &__social {
@@ -89,6 +93,11 @@
     &__media {
         width: 32px;
         height: 20px;
+
+        @include desktop {
+            height: 25px;
+            width: 40px;
+        }
     }
 
     &__link {
