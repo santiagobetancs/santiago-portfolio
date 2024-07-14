@@ -7,14 +7,25 @@
 .header {
     background-color: $gray;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: center;
 
-    @include tablet {
-        flex-direction: row;
-        padding: 0 32px;
-        justify-content: space-between;
+    &__container {
+        display: flex;
+        flex-direction: column;
         align-items: center;
+    
+        @include tablet {
+            width: 768px;
+            flex-direction: row;
+            padding: 0 32px;
+            justify-content: space-between;
+            align-items: center;
+        }
+    
+        @include desktop {
+            padding: 0 128px;
+            width: 1280px;
+        }
     }
 
     &__box {
@@ -29,7 +40,8 @@
             }
 
             @include desktop {
-                display: none;
+                display: flex;
+                gap: 50px;
             }
         }
 
@@ -54,13 +66,23 @@
             }
 
             @include desktop {
-                display: flex;
+                display: none;
             }
         }
     }
 
     &__logo {
         width: 80px;
+    }
+
+    &__title {
+        display: none;
+
+        @include desktop {
+            color: $pine;
+            display: flex;
+            font-size: 1.5rem;
+        }
     }
 
     &__button {
