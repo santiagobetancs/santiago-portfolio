@@ -1,9 +1,10 @@
+import Header from '../../components/Header/Header'
 import './HomePage.scss'
 
 export default function HomePage() {
     return (
         <>
-            <h1>Hello World</h1>
+            <Header />
         </>
     )
 }
