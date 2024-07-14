@@ -12,24 +12,30 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 1rem 2rem;
+        padding: 4rem 2rem;
         gap: 20px;
         width: 320px;
 
         @include tablet {
             width: 768px;
             align-items: flex-start;
-            padding: 32px 32px 32px 52.5px;
+            padding: 128px 32px 128px 52.5px;
         }
 
         @include desktop {
             width: 1280px;
-            padding: 32px 128px 32px 150px;
+            padding: 80px 128px 90px 150px;
         }
     }
 
     &__title {
         font-size: 1.5rem;
+        color: $pine;
+        
+        @include desktop {
+            font-size: 2rem;
+
+        }
     }
 
     &__description {
