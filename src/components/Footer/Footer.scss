@@ -1,0 +1,57 @@
+@use '../../styles/partials/fonts' as *;
+@use '../../styles/partials/globals' as *;
+@use '../../styles/partials/mixins' as *;
+@use '../../styles/partials/variables' as *;
+@use '../../styles/partials/resets' as *;
+
+.footer {
+    background-color: $forest;
+    display: flex;
+    justify-content: center;
+
+
+    &__container {
+        padding: 1.25rem 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    
+        @include tablet {
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 1rem 32px;
+            width: 768px;
+        }
+
+        @include desktop {
+            width: 1280px;
+            padding: 1rem 128px;
+        }
+    }
+
+    &__header {
+        color: $gray;
+        font-size: 1rem;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    &__media {
+        width: 32px;
+        height: 20px;
+
+        @include desktop {
+            height: 25px;
+            width: 40px;
+        }
+    }
+
+    &__link {
+        color: $gray;
+
+        &:hover {
+            color: white;
+        }
+    }
+}
