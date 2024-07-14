@@ -8,6 +8,7 @@
     background-color: $gray;
     display: flex;
     flex-direction: column;
+    align-items: center;
 
     @include tablet {
         flex-direction: row;
@@ -20,14 +21,34 @@
         display: flex;
         justify-content: space-evenly;
 
+        &--logo {
+            display: none;
+
+            @include tablet {
+                display: flex;
+            }
+
+            @include desktop {
+                display: none;
+            }
+        }
+
         &--nav {
+            width: 180px;
+            display: flex;
+            justify-content: space-between;
             @include tablet {
                 gap: 22.5px;
+                width: auto;
             }
         }
 
         &--sb {
-            display: none;
+            display: flex;
+
+            @include tablet {
+                display: none;
+            }
 
             @include desktop {
                 display: flex;
@@ -41,7 +62,7 @@
 
     &__button {
         color: black;
-        padding: 20px 0 40px 0;
+        padding: 0px 0 40px 0;
         font-size: 1rem;
 
         &:hover {
@@ -71,7 +92,12 @@
     }
 
     &__sb {
-        height: 125px;
-        width:325px;
+        height: 135px;
+        width: 200px;
+
+        @include desktop {
+            height: 125px;
+            width:250px;
+        }
     }
 }
