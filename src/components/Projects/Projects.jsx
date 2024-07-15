@@ -5,9 +5,9 @@ export default function Projects() {
     return (
         <main className='projects'>
             <section className='projects__container projects__container--top'>
-                <h1 className='projects__title'>
+                <h2 className='projects__title'>
                     Projects
-                </h1>
+                </h2>
             </section>
             <section className='projects__container projects__container--bottom'>
                 <Project />
