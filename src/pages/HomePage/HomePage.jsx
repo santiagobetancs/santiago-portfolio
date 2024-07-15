@@ -9,9 +9,11 @@ export default function HomePage() {
     return (
         <>
             <Header />
-            <Hero />
-            <Projects />
-            <About />
+            <main className='home'>
+                <Hero />
+                <Projects />
+                <About />
+            </main>
             <Footer />
         </>
     )
