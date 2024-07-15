@@ -4,41 +4,26 @@
 @use '../../styles/partials/variables' as *;
 @use '../../styles/partials/resets' as *;
 
-.hero {
+.projects {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 
     &__container {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        padding: 4rem 2rem;
-        gap: 20px;
+        align-items: flex-start;
         width: 320px;
+        padding: 0rem 2rem 2rem 2rem;
 
         @include tablet {
             width: 768px;
-            align-items: flex-start;
-            padding: 128px 32px 128px 52.5px;
+            padding: 0px 32px 32px 52.5px;
         }
 
         @include desktop {
             width: 1280px;
-            padding: 80px 128px 90px 150px;
+            padding: 0px 128px 32px 150px;
         }
-    }
-
-    &__title {
-        font-size: 1.5rem;
-        color: $pine;
-        
-        @include desktop {
-            font-size: 2rem;
-
-        }
-    }
-
-    &__description {
-        font-weight: 500;
     }
 }
