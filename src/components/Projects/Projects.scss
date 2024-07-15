@@ -15,5 +15,15 @@
         align-items: flex-start;
         width: 320px;
         padding: 0rem 2rem 2rem 2rem;
+
+        @include tablet {
+            width: 768px;
+            padding: 0px 32px 32px 52.5px;
+        }
+
+        @include desktop {
+            width: 1280px;
+            padding: 0px 128px 32px 150px;
+        }
     }
 }

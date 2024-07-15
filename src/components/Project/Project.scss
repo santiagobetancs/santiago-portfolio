@@ -15,18 +15,55 @@
         width: 100%;
         align-items: center;
         padding: 0.75rem;
-        gap: 10px;
+        gap:15px;
+        border-radius: 8px;
+
+        @include tablet {
+            padding: 1rem;
+        }
+
+        @include desktop {
+            flex-direction: row;
+        }
     }
 
     &__thumbnail {
         width: 100%;
         border-radius: 0.25rem;
+
+        @include desktop {
+            width: 65%;
+        }
+    }
+
+    &__box {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        @include tablet {
+            width: 100%;
+        }
+
+        @include desktop {
+            margin: 0;
+            gap: 40px;
+            padding: 0px 8px;
+        }
     }
 
     &__description {
         display: flex;
         justify-content: space-between;
         width: 100%;
+
+        @include tablet {
+            justify-content: space-evenly;
+        }
+
+        @include desktop {
+            justify-content: space-between;
+        }
     }
 
     &__title {
@@ -60,14 +97,19 @@
         justify-content: flex-start;
         width: 100%;
         color: $gray;
+        display: none;
+
+        @include desktop {
+            display: flex;
+        }
     }
     
     &__tech {
         width: 100%;
         display: flex;
         flex-wrap: wrap;
-        gap: 25px;
-        justify-content: space-between;
+        gap: 20px;
+        justify-content: space-evenly;
     }
 
     &__program {
