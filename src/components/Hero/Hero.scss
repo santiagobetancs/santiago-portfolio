@@ -34,12 +34,6 @@
             margin: 80px 128px 90px 150px;
             padding: 12rem 2rem;
         }
-
-        @include monitor {
-            width: 1450px;
-            margin: 80px 210px 90px 220px;
-            padding: 12rem 2rem;
-        }
     }
 
     &__div {

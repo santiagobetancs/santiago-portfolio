@@ -26,10 +26,6 @@
             padding: 9px 128px;
             width: 1280px;
         }
-
-        @include monitor {
-            width: 1450px;
-        }
     }
 
     &__box {

@@ -28,11 +28,6 @@
             width: 1280px;
             padding: 1rem 128px;
         }
-
-        @include monitor {
-            width: 1450px;
-            padding: 1rem 120px 1rem 150px;
-        }
     }
 
     &__header {
