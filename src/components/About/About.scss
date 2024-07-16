@@ -1,0 +1,109 @@
+@use '../../styles/partials/fonts' as *;
+@use '../../styles/partials/globals' as *;
+@use '../../styles/partials/mixins' as *;
+@use '../../styles/partials/variables' as *;
+@use '../../styles/partials/resets' as *;
+
+.about {
+    display: flex;
+    justify-content: center;
+
+    &__container {
+        background-color: $gray;
+        border-radius: 8px;
+        padding: 1.5rem 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        margin: 2rem;
+        width: 256px;
+
+
+        @include tablet {
+            gap: 25px;
+            margin: 100px 32px 100px 52.5px;
+            width: 683.5px;
+        }
+
+        @include desktop {
+            margin: 100px 128px 150px 150px;
+            width: 1002px;
+            flex-direction: row;
+            padding: 3rem 1rem;
+        }
+    }
+
+    &__box {
+        display: flex;
+        justify-content: space-between;
+
+        @include tablet {
+            justify-content: space-evenly;
+        }
+
+        @include desktop {
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+            width: 40%;
+        }
+
+        &--text {
+            flex-direction: column;
+            gap: 20px;
+            
+            @include tablet {
+                padding: 0 1rem;
+                align-items: center;
+            }
+
+            @include desktop {
+                width: 60%;
+                align-items: flex-start;
+            }
+        }
+    }
+
+    &__title {
+        font-size: 1.25rem;
+    }
+
+    &__image {
+        width: 50%;
+        border-radius: 50%;
+
+        @include tablet {
+            width: 25%;
+        }
+
+        @include desktop {
+            width: 50%;
+        }
+    }
+
+    &__social {
+        display: flex;
+        justify-content: space-evenly;
+
+        @include tablet {
+            gap: 0px;
+            width: 30%;
+        }
+
+        @include desktop {
+            justify-content: space-between;
+        }
+    }
+
+    &__link {
+        color: $pine;
+
+        &:hover {
+            color: black;
+        }
+    }
+
+    &__media {
+        height: 30px;
+    }
+}

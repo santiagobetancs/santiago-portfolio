@@ -1,0 +1,61 @@
+@use '../../styles/partials/fonts' as *;
+@use '../../styles/partials/globals' as *;
+@use '../../styles/partials/mixins' as *;
+@use '../../styles/partials/variables' as *;
+@use '../../styles/partials/resets' as *;
+
+.hero {
+    display: flex;
+    justify-content: center;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 4rem 2rem;
+        padding: 1.25rem;
+        gap: 20px;
+        width: 256px;
+        background-image: url('../../assets/images/toronto.webp');
+        background-repeat: no-repeat;
+        background-size: cover;
+        opacity: 1;
+        border-radius: 8px;
+
+        @include tablet {
+            width: 683.5px;
+            align-items: flex-start;
+            margin: 128px 32px 128px 52.5px;
+            padding: 6rem 2rem;
+        }
+
+        @include desktop {
+            width: 1002px;
+            margin: 80px 128px 90px 150px;
+            padding: 12rem 2rem;
+        }
+    }
+
+    &__div {
+        background-color: #bab39bdb;
+        padding: 1.5rem 1rem;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    &__title {
+        font-size: 1.5rem;
+        color: $pine;
+        
+        @include desktop {
+            font-size: 2rem;
+
+        }
+    }
+
+    &__description {
+        font-weight: 500;
+    }
+}
