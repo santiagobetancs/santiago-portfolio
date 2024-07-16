@@ -19,8 +19,12 @@ export default function Header() {
             <img className="header__sb" src={santiago} alt="" />
           </section>
           <section className="header__box header__box--nav">
-            <h4 className="header__button">PROJECTS</h4>
-            <h4 className="header__button">ABOUT</h4>
+            <a className="header__button" href="#projects">
+              <h4 className="header__button">PROJECTS</h4>
+            </a>
+            <a className="header__button" href="#about">
+              <h4 className="header__button">ABOUT</h4>
+            </a>
             <section className="header__social">
               <Link
                 className="header__link"
@@ -35,9 +39,9 @@ export default function Header() {
                 <FaLinkedin className="header__media" />
               </Link>
               {/* no route here */}
-              <Link className="header__link">
+              <a className="header__link" href="mailto:santibegi@gmail.com">
                 <IoIosMail className="header__media" />
-              </Link>
+              </a>
             </section>
           </section>
         </main>

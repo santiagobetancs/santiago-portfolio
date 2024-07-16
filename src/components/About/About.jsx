@@ -7,7 +7,7 @@ import { FaGithub } from "react-icons/fa";
 
 export default function About() {
     return (
-        <main className='about'>
+        <main id='about' className='about'>
             <section className='about__container'>
                 <div className='about__box about__text--image'>
                     <h2 className='about__title'>

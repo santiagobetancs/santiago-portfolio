@@ -23,9 +23,9 @@ export default function Footer() {
             <FaLinkedin className="footer__media" />
           </Link>
           {/* no route here */}
-          <Link className="footer__link">
+          <a href="mailto:santibegi@gmail.com" className="footer__link">
             <IoIosMail className="footer__media" />
-          </Link>
+          </a>
         </section>
       </main>
     </footer>

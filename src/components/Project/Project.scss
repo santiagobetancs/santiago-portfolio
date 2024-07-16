@@ -25,6 +25,10 @@
         @include desktop {
             flex-direction: row;
         }
+
+        @include monitor {
+            
+        }
     }
 
     &__thumbnail {

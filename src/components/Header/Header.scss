@@ -23,8 +23,12 @@
         }
     
         @include desktop {
-            padding: 0 128px;
+            padding: 9px 128px;
             width: 1280px;
+        }
+
+        @include monitor {
+            width: 1450px;
         }
     }
 
@@ -90,6 +94,7 @@
         padding: 0px 0 40px 0;
         font-size: 1rem;
         cursor: pointer;
+        text-decoration: none;
 
         &:hover {
             color: $forest;

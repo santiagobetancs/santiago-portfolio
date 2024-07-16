@@ -6,6 +6,7 @@ import Projects from '../../components/Projects/Projects';
 import About from '../../components/About/About';
 
 export default function HomePage() {
+
     return (
         <>
             <Header />
